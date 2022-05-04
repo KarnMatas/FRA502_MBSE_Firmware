@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="03/19/22||23:55:01" using="Simscape Multibody Link Version 7.4" from="SolidWorks 29.4.1"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Assem" uid="Assem" version="125">
+<AssemblyFile name="Assem.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="base-2" uid="base-2" entityUid="base*:*Default">
+<Transform>
+<Rotation>0 1.04744440165294e-14 -1 -1 1.04744440165294e-14 0 1.04744440165294e-14 1 1.04744440165294e-14</Rotation>
+<Translation>0.068134977036838767 -0.062476011178508019 0.0066214292425567783</Translation>
+</Transform>
+</Instance>
+<Instance name="wheel-1" uid="wheel-1" entityUid="wheel*:*Default">
+<Transform>
+<Rotation>-0.99970232410330573 -0.024398015953134886 0 0 1.1648611159339638e-16 -1 0.024398015953134886 -0.99970232410330573 -1.1737359874880546e-16</Rotation>
+<Translation>-0.066865022963161935 0.12252398882149199 -0.043378570757442329</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.69999999999999996" g="0.69999999999999996" b="0.69999999999999996" a="1"/>
+<Emissive r="0.29999999999999999" g="0.29999999999999999" b="0.29999999999999999" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="cwheel-1" uid="cwheel-1" entityUid="cwheel*:*Default">
+<Transform>
+<Rotation>0.99324265240421339 -0.11605616504539033 0 0 -1.206358531377214e-16 -1 0.11605616504539033 0.99324265240421339 -1.1737359874829398e-16</Rotation>
+<Translation>0.19813497703683744 -0.062476011178508109 -0.093378570757445614</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.69999999999999996" g="0.69999999999999996" b="0.69999999999999996" a="1"/>
+<Emissive r="0.29999999999999999" g="0.29999999999999999" b="0.29999999999999999" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="wheel-2" uid="wheel-2" entityUid="wheel*:*Default">
+<Transform>
+<Rotation>0.59391956586002259 -0.80452442429589555 0 0 0 -0.99999999999999989 0.80452442429589555 0.59391956586002259 -1.1737359874828629e-16</Rotation>
+<Translation>-0.066865022963161921 -0.24747601117850815 -0.04337857075744235</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.69999999999999996" g="0.69999999999999996" b="0.69999999999999996" a="1"/>
+<Emissive r="0.29999999999999999" g="0.29999999999999999" b="0.29999999999999999" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>base-2</Uid>
+</InstancePath>
+<Position>-0.2998528137423857 -0.050000000000000003 0.13500000000000009</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>wheel-1</Uid>
+</InstancePath>
+<Position>0 0 0.029999999999999999</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base-2</Uid>
+</InstancePath>
+<Position>-0.21500000000000011 0.17999999999999999 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>wheel-1</Uid>
+</InstancePath>
+<Position>0 0 -0.029999999999999999</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>base-2</Uid>
+</InstancePath>
+<Position>0.21500000000000002 -0.049999999999999989 0.13500000000000009</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>wheel-2</Uid>
+</InstancePath>
+<Position>0 0 0.029999999999999943</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base-2</Uid>
+</InstancePath>
+<Position>0.21500000000000002 -0.049999999999999989 0.13500000000000009</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>wheel-2</Uid>
+</InstancePath>
+<Position>0 0 0.029999999999999943</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>base-2</Uid>
+</InstancePath>
+<Position>0.21500000000000008 -0.10000000000000001 -0.12999999999999989</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>cwheel-1</Uid>
+</InstancePath>
+<Position>0 0 -0.050000000000000003</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base-2</Uid>
+</InstancePath>
+<Position>-0.029999999999999978 -0.12 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>cwheel-1</Uid>
+</InstancePath>
+<Position>0 0 -0.029999999999999999</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="base" uid="base*:*Default" version="213">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="base.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>83.453056175587122</Mass>
+<CenterOfMass>1.0426835593929305e-08 0.078372411083288365 0.025585003819867821</CenterOfMass>
+<Inertia>1.497150419371418 2.1174083473498566 1.3615481770964102 0.082049081428172854 -1.5251216213081102e-07 -6.410968008735284e-08</Inertia>
+</MassProperties>
+<GeometryFile name="base_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="0.29999999999999999" g="0.29999999999999999" b="0.29999999999999999" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="cwheel" uid="cwheel*:*Default" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="cwheel.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.5344791581552315</Mass>
+<CenterOfMass>0 0 0</CenterOfMass>
+<Inertia>0.00051752457165243015 0.00051752457165242993 0.0006336855490675353 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="cwheel_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="0.31999999999999995"/>
+<Diffuse r="1" g="1" b="1" a="0.31999999999999995"/>
+<Specular r="0.69999999999999996" g="0.69999999999999996" b="0.69999999999999996" a="0.31999999999999995"/>
+<Emissive r="0.29999999999999999" g="0.29999999999999999" b="0.29999999999999999" a="0.31999999999999995"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="wheel" uid="wheel*:*Default" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="wheel.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.8353812600802288</Mass>
+<CenterOfMass>0 0 0</CenterOfMass>
+<Inertia>0.0055520283117426955 0.0055520283117426938 0.010002827867437251 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="wheel_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="0.31999999999999995"/>
+<Diffuse r="1" g="1" b="1" a="0.31999999999999995"/>
+<Specular r="0.69999999999999996" g="0.69999999999999996" b="0.69999999999999996" a="0.31999999999999995"/>
+<Emissive r="0.29999999999999999" g="0.29999999999999999" b="0.29999999999999999" a="0.31999999999999995"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
